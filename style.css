@@ -5,7 +5,7 @@ body {
     color: #2b2b2b;
 }
 
-/* HERO */
+/* HERO — старая фотка */
 .hero {
     background-image: url("https://i.ibb.co/9HWcwRdm/IMG-8251.jpg");
     background-position: center;
@@ -41,22 +41,11 @@ body {
     margin: 5px;
 }
 
-.btn-main:hover {
-    background: #b08f50;
-    transition: 0.3s;
-}
-
 .btn-outline {
     border: 1px solid white;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: black;
-    transition: 0.3s;
 }
 
 /* NAV */
@@ -70,11 +59,6 @@ body {
     padding: 15px;
     display: inline-block;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    background: #c5a96b;
 }
 
 /* ABOUT */
@@ -88,10 +72,10 @@ body {
     padding: 40px;
 }
 
+/* ABOUT IMAGE — новая фотка */
 .about-img {
-    background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200') center/cover;
+    background: url("https://i.yapx.ru/dnoIS.jpg") center/cover;
     min-height: 300px;
-    flex: 1;
 }
 
 /* CONTAINER */
@@ -113,7 +97,6 @@ body {
     background: white;
     padding: 15px;
     border-left: 4px solid #c5a96b;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* SCHEDULE */
@@ -128,7 +111,6 @@ body {
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* CHARITY */
@@ -156,28 +138,12 @@ footer {
 
 /* MOBILE */
 @media(max-width:700px){
-
     .hero {
         height: 350px;
-        background-position: center;
     }
 
     .hero h1 {
         font-size: 24px;
-        padding: 0 10px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-main,
-    .btn-outline {
-        width: 80%;
-        margin-bottom: 10px;
-        text-align: center;
     }
 
     .about {
