@@ -1,20 +1,22 @@
-function loadData() {
+<script>
+function addNews(){
     let news = JSON.parse(localStorage.getItem("news")) || [];
-    let schedule = localStorage.getItem("schedule") || "Нет данных";
-    let charity = localStorage.getItem("charity") || "Нет данных";
-
-    let newsList = document.getElementById("news-list");
-    newsList.innerHTML = "";
-
-    news.forEach(n => {
-        let div = document.createElement("div");
-        div.className = "card";
-        div.innerText = n;
-        newsList.appendChild(div);
-    });
-
-    document.getElementById("schedule-text").innerText = schedule;
-    document.getElementById("charity-text").innerText = charity;
+    news.push(document.getElementById("newsInput").value);
+    localStorage.setItem("news", JSON.stringify(news));
+    document.getElementById("newsInput").value = "";
 }
 
-loadData();
+function saveSchedule(){
+    localStorage.setItem("schedule", document.getElementById("schedule").value);
+}
+
+function saveCharity(){
+    localStorage.setItem("charity", document.getElementById("charity").value);
+}
+
+// Очистка всех данных
+function clearStorage(){
+    localStorage.clear();
+    alert("Все данные удалены");
+}
+</script>
